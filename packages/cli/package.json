@@ -9,7 +9,7 @@
   "scripts": {
     "dev": "tsup index.ts --watch",
     "build": "tsup index.ts",
-    "version": "bun run build && changeset version"
+    "version": "pnpm run build && changeset version"
   },
   "devDependencies": {
     "typescript": "^5.2.2"
