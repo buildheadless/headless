@@ -1,0 +1,24 @@
+{
+  "name": "create-headless",
+  "type": "module",
+  "version": "0.0.4",
+  "main": "build/index.cjs",
+  "module": "build/index.mjs",
+  "types": "build/index.d.ts",
+  "bin": {
+    "create-headless": "build/index.js"
+  },
+  "scripts": {
+    "dev": "bun index.ts",
+    "build": "bun build.ts",
+    "version": "bun run build && changeset version"
+  },
+  "devDependencies": {
+    "bun-types": "latest",
+    "typescript": "^5.2.2"
+  },
+  "dependencies": {
+    "@clack/prompts": "^0.7.0",
+    "colors": "^1.4.0"
+  }
+}
