@@ -2,19 +2,16 @@
   "name": "create-headless",
   "type": "module",
   "version": "0.0.4",
-  "main": "build/index.cjs",
-  "module": "build/index.mjs",
-  "types": "build/index.d.ts",
+  "main": "dist/index.cjs",
   "bin": {
-    "create-headless": "build/index.js"
+    "create-headless": "dist/index.cjs"
   },
   "scripts": {
-    "dev": "bun index.ts",
-    "build": "bun build.ts",
+    "dev": "tsup index.ts --watch",
+    "build": "tsup index.ts",
     "version": "bun run build && changeset version"
   },
   "devDependencies": {
-    "bun-types": "latest",
     "typescript": "^5.2.2"
   },
   "dependencies": {
